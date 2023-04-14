@@ -1,11 +1,15 @@
-import { NotImplementedError } from '../extensions/index.js';
+const { NotImplementedError } = require('../extensions/index.js');
 
 /**
  * Implement chainMaker object according to task description
  * 
  */
+<<<<<<< HEAD
 const obj = {
   chain: [],
+=======
+const chainMaker = {
+>>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e
   getLength() {
     return this.chain.length;
   },
@@ -32,9 +36,15 @@ const obj = {
   },
 };
 
+<<<<<<< HEAD
 export default obj;
 
 
 
 
   
+=======
+module.exports = {
+  chainMaker
+};
+>>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e

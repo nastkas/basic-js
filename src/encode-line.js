@@ -1,4 +1,4 @@
-import { NotImplementedError } from '../extensions/index.js';
+const { NotImplementedError } = require('../extensions/index.js');
 
 /**
  * Given a string, return its encoding version.
@@ -10,6 +10,7 @@ import { NotImplementedError } from '../extensions/index.js';
  * For aabbbc should return 2a3bc
  *
  */
+<<<<<<< HEAD:src/st-encode-line.js
 export default function encodeLine(str) {
   let encoded = '';
   let currentChar = str[0];
@@ -27,3 +28,13 @@ export default function encodeLine(str) {
   
   return encoded;
 }
+=======
+function encodeLine(/* str */) {
+  throw new NotImplementedError('Not implemented');
+  // remove line with error and write your code here
+}
+
+module.exports = {
+  encodeLine
+};
+>>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e:src/encode-line.js
