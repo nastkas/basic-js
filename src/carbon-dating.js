@@ -1,9 +1,9 @@
-import { NotImplementedError } from '../extensions/index.js';
+const { NotImplementedError } = require('../extensions/index.js');
 
 const MODERN_ACTIVITY = 15;
 const HALF_LIFE_PERIOD = 5730;
 
-export default function dateSample(sampleActivity) {
+ function dateSample(sampleActivity) {
   if (typeof sampleActivity !== 'string' || isNaN(sampleActivity) || sampleActivity <= 0 || sampleActivity > MODERN_ACTIVITY) {
     return false;
   }
@@ -13,3 +13,7 @@ export default function dateSample(sampleActivity) {
 
   return age;
 }
+
+module.exports = {
+  dateSample
+};
