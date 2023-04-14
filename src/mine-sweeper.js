@@ -23,8 +23,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *  [1, 1, 1]
  * ]
  */
-<<<<<<< HEAD:src/st-mine-sweeper.js
-export default function minesweeper(matrix) {
+ function minesweeper(matrix) {
   const rows = matrix.length;
   const cols = matrix[0].length;
   const result = [];
@@ -54,13 +53,6 @@ export default function minesweeper(matrix) {
 
   return result;
 }
-=======
-function minesweeper(/* matrix */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-}
-
 module.exports = {
   minesweeper
 };
->>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e:src/mine-sweeper.js

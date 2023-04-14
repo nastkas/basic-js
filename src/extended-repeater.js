@@ -15,8 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * => 'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'
  *
  */
-<<<<<<< HEAD
-export default function repeater(str, options) {
+ function repeater(str, options) {
   // Set default values for options
   const repeatTimes = options.repeatTimes || 1;
   const separator = options.separator || '+';
@@ -36,13 +35,6 @@ export default function repeater(str, options) {
 
   return repeatedStrings;
 }
-=======
-function repeater(/* str, options */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-}
-
 module.exports = {
   repeater
 };
->>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e

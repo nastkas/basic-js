@@ -14,15 +14,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For 00-1B-63-84-45-E6, the output should be true.
  *
  */
-<<<<<<< HEAD:src/st-mac-address.js
-export default function isMAC48Address(inputString) {
+function isMAC48Address(inputString) {
   const macRegex = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/;
   return macRegex.test(inputString);
-=======
-function isMAC48Address(/* n */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
->>>>>>> 74bc7d543985dd5ab5e8a836d6ad567edd83fe3e:src/mac-address.js
 }
 module.exports = {
   isMAC48Address
